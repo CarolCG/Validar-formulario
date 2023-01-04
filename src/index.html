@@ -12,17 +12,183 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="card text-center m-4" style="border: 1px solid gray;">
+      <div class="card-header">
+        <h3 class="d-flex justify-content-start">Payment For Example</h3>
+      </div>
+      <div class="card-body">
+        <div
+          class="alert alert-danger text-start"
+          role="alert"
+          style="display:none;"
+          id="alert"
+        >
+          <strong>Some fields are missing</strong>
+        </div>
+        <form class=" row g-3">
+          <div class="col-md-4">
+            <label for="inputAddress" class="d-flex justify-content-start"
+              ><strong>Card #</strong></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="XXXXXXXXX"
+            />""
+          </div>
+          <div class="col-md-4">
+            <label for="inputAddress2" class="d-flex justify-content-start"
+              ><strong>CVC #</strong></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="password"
+              placeholder="0000"
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="inputCity" class="d-flex justify-content-start"
+              ><strong>Amount</strong></label
+            >
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Amount (to the nearest dollar)"
+                id="amount"
+                placeholder=" Amount"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputAddress2" class="d-flex justify-content-start"
+              ><strong>First Name</strong></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="firstname"
+              placeholder=""
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputAddress2" class="d-flex justify-content-start"
+              ><strong>Last Name</strong></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="lastname"
+              placeholder=""
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="d-flex justify-content-start"
+              ><strong>City</strong></label
+            >
+            <input type="text" class="form-control" id="city" placeholder="" />
+          </div>
+          <div class="col-md-3">
+            <label for="inputState" class="d-flex justify-content-start"
+              ><strong>State</strong></label
+            >
+            <select id="state" class="form-select">
+              <option selected>Pick a state</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="inputZip" class="d-flex justify-content-start"
+              ><strong>Postal Code</strong></label
+            >
+            <input type="text" class="form-control" id="postalCode" />
+          </div>
+          <div class="col-md-3">
+            <p class="d-flex justify-content-start">
+              <strong>We accept:</strong>
+            </p>
+            <div
+              class="d-flex justify-content-start"
+              style="background-color: rgb(133, 127, 127); padding: 5px; padding-left: 35px; border-radius: 4px;"
+            >
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="radio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  ><i class="fa fa-credit-card"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="radio2"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  ><i class="fa fa-credit-card"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="radio3"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  ><i class="fa fa-credit-card"></i
+                ></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="radio4"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  ><i class="fa fa-credit-card"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <label
+              for="exampleFormControlTextarea1"
+              class="form-label d-flex justify-content-start"
+              ><strong>Message</strong></label
+            >
+            <textarea class="form-control" id="textarea1" rows="3"></textarea>
+            <p class="d-flex justify-content-start" style="color: gray;">
+              <small>Add any notes here.</small>
+            </p>
+          </div>
+          <div class="card-footer text-end">
+            <div class="col-12">
+              <button type="button" class="btn btn-primary bg-secondary">
+                <strong>Cancel</strong>
+              </button>
+              <button type="submit" class="btn btn-primary ">
+                <strong>Send</strong>
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </body>
